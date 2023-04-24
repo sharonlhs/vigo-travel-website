@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* entire styles */
+:root 
+{
+  --primary-color: #0E4B9C;
+  --secondary-color: #6E98EE;
+  --input-color: #ABC0EB; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* nav styles */
+nav {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: inline-block;
+  color: #333;
+  font-weight: 400;
+  margin-left: 20px;
+  text-decoration: none;
+} 
+.links-left {
+  display: flex;
+  align-items: center;
+}
+.links-left img {
+  position: relative;
+  max-width: 100px;
+  margin-right: 20px;
+}
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: #fff;
+  border-radius: 100px;
+  padding: 8px 20px;
+}
+.btn-primary:hover {
+  background-color: var(--primary-color);
+}
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 100px;
+  padding: 8px 20px;
+}
+.btn-secondary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* hero styles */
+.hero-image {
+  height: 70vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("/assets/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+
+
+  .hero-form {
+    display: flex;  
+    text-align: center;
+    justify-content: center;
+  }
+
+}
+
+/* form styles */
+.hero-form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #fff;
+  padding: 1em;
+  border-radius: 50px;
+  box-shadow: 5px 5px 1px 1px var(--primary-color)
+}
+form {
+  display: flex;
+  align-items: center;
+}
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form button[type="submit"] {
+  margin-right: 10px;
+  border: none;
+  padding: .25em;
+  background-color: transparent;
+}
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.input-text-field {
+  display: flex;
+  margin-right: 10px;
+  border-radius: 50px;
+  width: fit-content;
+  border: solid 2px var(--input-color);
+}
+.icon-input {
+  width: 35px;
+  height: 35px;
+  padding: .5em;
+}
+input[type="date"] {
+  color: var(--primary-color);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: block;
+  background-repeat:  no-repeat;
+  width: 25px;
+  height: 25px;
+  border-width: thin;
+  order: -1;
+  margin-right: 0.5rem;
+}
+.btn-search {
+  width: 35px;
+  height: 35px;
+  padding: .5em;
+  border-radius: 50px;
+  background-color: var(--primary-color);
+}
+/* section 1 styles */
+.second-section {
+  display: block;
+  margin: 50px;
+}
+.disc-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  overflow-x: scroll;
+}
+.big-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+.disc-wrapper {
+  width: fit-content;
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  color: var(--primary-color);
+  padding: 8px 15px;
+  font-weight: bold;
+  font-size: .8rem;
+  border-radius: 20px;
+}
+
+.disc-wrapper .location-img {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.hotel-name {
+  max-width: 200px;
+  white-space: wrap;
+  font-weight: 700;
+}
+
+.location-name {
+  font-size: .8rem;
+}
+
+.inline {
+  display: flex;  /* set the container to use flexbox */
+  align-items: center;  /* center the items vertically */
+  margin-top: 3px;
+}
+
+.inline img {
+  height: 15px;
+  margin-right: 5px;  /* add some space between the image and the text */
+}
+
+.hotel-details {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.hotel-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart-icon {
+  width: 35px;
+  height: 35px;
+  justify-content: flex-end;
+}
