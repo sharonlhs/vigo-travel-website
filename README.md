@@ -7,5 +7,5 @@ A simple landing page for a travel website
 ## Screenshot
 
 <p align="center">
-  <img src="/README_images/design.png" width="300">
+  <img src="/README_images/design.png">
 </p>
